@@ -8,8 +8,7 @@ This analysis was derived using National statistics from: [HR Revenue + Customs]
 ### setting up environment: 
 Setting up environment, this was built using python 3.12.1 and pip 23.3.2. 
 
-After cloning the repository...
-Build a virtual environment:
+After cloning the repository, build a virtual environment:
 
 ``` python venv .venv ```
 
