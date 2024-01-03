@@ -59,10 +59,10 @@ ax.text(x=11 + 0.1, y=std_line_above[-1], s='+ 1 std', va="center", c ='darkblue
 ax.text(x=11 + 0.1, y=std_line_below[-1], s='- 1 std', va="center", c ='darkblue')
 
 # Set month labels and ticks
-ax.set_xticks(list(range(0,12)), labels = list(year_dict[year].keys()), rotation = 70)
+ax.set_xticks(list(range(0,12)), labels = list(year_dict['2006'].keys()), rotation = 70)
 
 
-plt.title('House sales in Wales by year [since Jan 2006]', loc='left')
+plt.suptitle('House sales in Wales by year [since Jan 2006]', y=0.94)
 plt.ylabel('count: #')
 plt.xlabel('month of the year')
 plt.tight_layout()
