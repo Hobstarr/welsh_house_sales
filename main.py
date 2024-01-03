@@ -50,20 +50,22 @@ for year in year_dict:
         if '202' in year:
             ax = sns.lineplot(data=list(year_dict[year].values()), color='darkgreen', linestyle = '--', linewidth=0.4)
 
-
     else:
-        sns.lineplot(data=list(year_dict[year].values()), color='darkred', label='2023')
-        ax.text(x=9 + 0.1, y=list(year_dict[year].values())[-1], s=year, va="center", c ='darkred')
+        sns.lineplot(data=list(year_dict[year].values()), color='darkred', label=year)
+        ax.text(x= 10 + 0.1, y=list(year_dict[year].values())[10], s=year, va="center", c ='darkred')
 
 ax = sns.lineplot(data = averages, color = 'darkblue', label = 'average', linestyle='--')
 ax.text(x=11 + 0.1, y=averages[-1], s='average', va="center", c ='darkblue')
 
 ax.fill_between(list(range(0,12)), line_below, line_above, alpha=0.2)
+ax.text(x=11 + 0.1, y=line_above[-1], s='+ 1 std', va="center", c ='darkblue')
+ax.text(x=11 + 0.1, y=line_below[-1], s='- 1 std', va="center", c ='darkblue')
     # print(list(year_dict[year].values()))
     # print(list(year_dict[year].keys()))
 
-plt.title('House sales in Wales by year')
+plt.title('House sales in Wales by year [since Jan 2006]', loc='left')
 plt.ylabel('count: #')
+plt.xlabel('month of the year')
 plt.tight_layout()
 plt.legend()
 
