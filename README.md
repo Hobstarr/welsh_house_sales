@@ -6,7 +6,9 @@ I wondered if house sales were unexpectedly low this year, so quickly looked thr
 This analysis was derived using National statistics from: [HR Revenue + Customs](https://www.gov.uk/government/statistics/monthly-property-transactions-completed-in-the-uk-with-value-40000-or-above)
 
 ### setting up environment: 
-Setting up environment, this was built using python 3.11.6 and pip 23.3.1. 
+Setting up environment, this was built using python 3.12.1 and pip 23.3.2. 
+
+After cloning the repository...
 Build a virtual environment:
 
 ``` python venv .venv ```
